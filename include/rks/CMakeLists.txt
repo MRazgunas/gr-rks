@@ -23,5 +23,5 @@
 ########################################################################
 install(FILES
     api.h
-    DESTINATION include/rks
+    came_fixed_code_decoder.h DESTINATION include/rks
 )
