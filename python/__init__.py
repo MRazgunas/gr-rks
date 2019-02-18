@@ -19,14 +19,14 @@
 # The presence of this file turns this directory into a Python package
 
 '''
-This is the GNU Radio OOK_REMOTE module. Place your Python package
+This is the GNU Radio RKS module. Place your Python package
 description here (python/__init__.py).
 '''
 
-# import swig generated symbols into the ook_remote namespace
+# import swig generated symbols into the rks namespace
 try:
 	# this might fail if the module is python-only
-	from ook_remote_swig import *
+	from rks_swig import *
 except ImportError:
 	pass
 

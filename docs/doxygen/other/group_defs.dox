@@ -1,6 +1,6 @@
 /*!
- * \defgroup block GNU Radio OOK_REMOTE C++ Signal Processing Blocks
- * \brief All C++ blocks that can be used from the OOK_REMOTE GNU Radio
+ * \defgroup block GNU Radio RKS C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the RKS GNU Radio
  *        module are listed here or in the subcategories below.
  *
  */
