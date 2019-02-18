@@ -1,0 +1,15 @@
+<block>
+  <name>Decode fm</name>
+  <key>ook_remote_decode_fm</key>
+  <category>[OOK_REMOTE]</category>
+  <import>import ook_remote</import>
+  <make>ook_remote.decode_fm()</make>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+  <source>
+     <name>out</name>
+     <type>message</type>
+  </source>
+</block>
