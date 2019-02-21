@@ -46,7 +46,9 @@ namespace gr {
        * class. rks::came_fixed_code_decoder::make is the public interface for
        * creating new instances.
        */
-      static sptr make();
+      static sptr make(bool enable_sync, 
+        int high_min_lenght, int high_max_lenght,
+        int low_min_lenght, int low_max_lenght);
     };
 
   } // namespace rks

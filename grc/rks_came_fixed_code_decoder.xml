@@ -4,18 +4,38 @@
   <key>rks_came_fixed_code_decoder</key>
   <category>[Remote keyless systems]</category>
   <import>import rks</import>
-  <make>rks.came_fixed_code_decoder()</make>
+  <make>rks.came_fixed_code_decoder($enable_sync, $high_min_lenght, $high_max_lenght,
+$low_min_lenght, $low_max_lenght)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:
        * name
        * key (makes the value accessible as $keyname, e.g. in the make node)
        * type -->
-<!---  <param>
-    <name>...</name>
-    <key>...</key>
-    <type>...</type>
-  </param> -->
-
+  <param>
+    <name>Enable sync</name>
+    <key>enable_sync</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>High bit min lenght</name>
+    <key>high_min_lenght</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>High bit max lenght</name>
+    <key>high_max_lenght</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Low bit min lenght</name>
+    <key>low_min_lenght</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Low bit max lenght</name>
+    <key>low_max_lenght</key>
+    <type>int</type>
+  </param>
   <!-- Make one 'sink' node per input. Sub-nodes:
        * name (an identifier for the GUI)
        * type

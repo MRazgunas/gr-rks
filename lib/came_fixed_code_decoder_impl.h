@@ -42,8 +42,14 @@ namespace gr {
       pmt::pmt_t out_port;
       std::vector<float> remote_code;
 
+      bool p_enable_sync; 
+      int p_high_min_lenght, p_high_max_lenght;
+      int p_low_min_lenght, p_low_max_lenght;
+
      public:
-      came_fixed_code_decoder_impl();
+      came_fixed_code_decoder_impl(bool enable_sync, 
+        int high_min_lenght, int high_max_lenght,
+        int low_min_lenght, int low_max_lenght);
       ~came_fixed_code_decoder_impl();
 
       // Where all the action really happens
