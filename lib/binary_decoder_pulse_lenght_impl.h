@@ -18,15 +18,15 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_RKS_CAME_FIXED_CODE_DECODER_IMPL_H
-#define INCLUDED_RKS_CAME_FIXED_CODE_DECODER_IMPL_H
+#ifndef INCLUDED_RKS_BINARY_DECODER_PULSE_LENGHT_IMPL_H
+#define INCLUDED_RKS_BINARY_DECODER_PULSE_LENGHT_IMPL_H
 
-#include <rks/came_fixed_code_decoder.h>
+#include <rks/binary_decoder_pulse_lenght.h>
 
 namespace gr {
   namespace rks {
 
-    class came_fixed_code_decoder_impl : public came_fixed_code_decoder
+    class binary_decoder_pulse_lenght_impl : public binary_decoder_pulse_lenght
     {
      private:
       // Nothing to declare in this block.
@@ -47,10 +47,10 @@ namespace gr {
       int p_low_min_lenght, p_low_max_lenght;
 
      public:
-      came_fixed_code_decoder_impl(bool enable_sync, 
+      binary_decoder_pulse_lenght_impl(bool enable_sync, 
         int high_min_lenght, int high_max_lenght,
         int low_min_lenght, int low_max_lenght);
-      ~came_fixed_code_decoder_impl();
+      ~binary_decoder_pulse_lenght_impl();
 
       // Where all the action really happens
       void forecast (int noutput_items, gr_vector_int &ninput_items_required);
@@ -64,5 +64,5 @@ namespace gr {
   } // namespace rks
 } // namespace gr
 
-#endif /* INCLUDED_RKS_CAME_FIXED_CODE_DECODER_IMPL_H */
+#endif /* INCLUDED_RKS_BINARY_DECODER_PULSE_LENGHT_IMPL_H */
 

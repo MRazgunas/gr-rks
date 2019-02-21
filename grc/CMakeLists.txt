@@ -19,5 +19,5 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    rks_came_fixed_code_decoder.xml DESTINATION share/gnuradio/grc/blocks
+    rks_binary_decoder_pulse_lenght.xml DESTINATION share/gnuradio/grc/blocks
 )

@@ -27,7 +27,7 @@ include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND rks_sources
-    came_fixed_code_decoder_impl.cc
+    binary_decoder_pulse_lenght_impl.cc
 )
 
 set(rks_sources "${rks_sources}" PARENT_SCOPE)

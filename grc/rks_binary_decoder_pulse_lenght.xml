@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <block>
   <name>Came fixed code decoder</name>
-  <key>rks_came_fixed_code_decoder</key>
+  <key>rks_binary_decoder_pulse_lenght</key>
   <category>[Remote keyless systems]</category>
   <import>import rks</import>
-  <make>rks.came_fixed_code_decoder($enable_sync, $high_min_lenght, $high_max_lenght,
+  <make>rks.binary_decoder_pulse_lenght($enable_sync, $high_min_lenght, $high_max_lenght,
 $low_min_lenght, $low_max_lenght)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:

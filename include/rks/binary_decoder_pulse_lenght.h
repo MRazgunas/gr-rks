@@ -19,8 +19,8 @@
  */
 
 
-#ifndef INCLUDED_RKS_CAME_FIXED_CODE_DECODER_H
-#define INCLUDED_RKS_CAME_FIXED_CODE_DECODER_H
+#ifndef INCLUDED_RKS_BINARY_DECODER_PULSE_LENGHT_H
+#define INCLUDED_RKS_BINARY_DECODER_PULSE_LENGHT_H
 
 #include <rks/api.h>
 #include <gnuradio/block.h>
@@ -33,17 +33,17 @@ namespace gr {
      * \ingroup rks
      *
      */
-    class RKS_API came_fixed_code_decoder : virtual public gr::block
+    class RKS_API binary_decoder_pulse_lenght : virtual public gr::block
     {
      public:
-      typedef boost::shared_ptr<came_fixed_code_decoder> sptr;
+      typedef boost::shared_ptr<binary_decoder_pulse_lenght> sptr;
 
       /*!
-       * \brief Return a shared_ptr to a new instance of rks::came_fixed_code_decoder.
+       * \brief Return a shared_ptr to a new instance of rks::binary_decoder_pulse_lenght.
        *
-       * To avoid accidental use of raw pointers, rks::came_fixed_code_decoder's
+       * To avoid accidental use of raw pointers, rks::binary_decoder_pulse_lenght's
        * constructor is in a private implementation
-       * class. rks::came_fixed_code_decoder::make is the public interface for
+       * class. rks::binary_decoder_pulse_lenght::make is the public interface for
        * creating new instances.
        */
       static sptr make(bool enable_sync, 
@@ -54,5 +54,5 @@ namespace gr {
   } // namespace rks
 } // namespace gr
 
-#endif /* INCLUDED_RKS_CAME_FIXED_CODE_DECODER_H */
+#endif /* INCLUDED_RKS_BINARY_DECODER_PULSE_LENGHT_H */
 

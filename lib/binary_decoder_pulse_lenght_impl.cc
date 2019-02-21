@@ -23,18 +23,18 @@
 #endif
 
 #include <gnuradio/io_signature.h>
-#include "came_fixed_code_decoder_impl.h"
+#include "binary_decoder_pulse_lenght_impl.h"
 
 namespace gr {
   namespace rks {
 
-    came_fixed_code_decoder::sptr
-    came_fixed_code_decoder::make(bool enable_sync, 
+    binary_decoder_pulse_lenght::sptr
+    binary_decoder_pulse_lenght::make(bool enable_sync, 
         int high_min_lenght, int high_max_lenght,
         int low_min_lenght, int low_max_lenght)
     {
       return gnuradio::get_initial_sptr
-        (new came_fixed_code_decoder_impl(enable_sync, 
+        (new binary_decoder_pulse_lenght_impl(enable_sync, 
         high_min_lenght, high_max_lenght,
         low_min_lenght, low_max_lenght));
     }
@@ -42,10 +42,10 @@ namespace gr {
     /*
      * The private constructor
      */
-    came_fixed_code_decoder_impl::came_fixed_code_decoder_impl(bool enable_sync, 
+    binary_decoder_pulse_lenght_impl::binary_decoder_pulse_lenght_impl(bool enable_sync, 
         int high_min_lenght, int high_max_lenght,
         int low_min_lenght, int low_max_lenght)
-      : gr::block("came_fixed_code_decoder",
+      : gr::block("binary_decoder_pulse_lenght",
               gr::io_signature::make(1, 1, sizeof(float)),
               gr::io_signature::make(0, 0, 0)),
         last_on(0),
@@ -64,18 +64,18 @@ namespace gr {
     /*
      * Our virtual destructor.
      */
-    came_fixed_code_decoder_impl::~came_fixed_code_decoder_impl()
+    binary_decoder_pulse_lenght_impl::~binary_decoder_pulse_lenght_impl()
     {
     }
 
     void
-    came_fixed_code_decoder_impl::forecast (int noutput_items, gr_vector_int &ninput_items_required)
+    binary_decoder_pulse_lenght_impl::forecast (int noutput_items, gr_vector_int &ninput_items_required)
     {
       /* <+forecast+> e.g. ninput_items_required[0] = noutput_items */
     }
 
     int
-    came_fixed_code_decoder_impl::general_work (int noutput_items,
+    binary_decoder_pulse_lenght_impl::general_work (int noutput_items,
                        gr_vector_int &ninput_items,
                        gr_vector_const_void_star &input_items,
                        gr_vector_void_star &output_items)

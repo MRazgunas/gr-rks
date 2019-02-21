@@ -8,9 +8,9 @@
 %include "rks_swig_doc.i"
 
 %{
-#include "rks/came_fixed_code_decoder.h"
+#include "rks/binary_decoder_pulse_lenght.h"
 %}
 
 
-%include "rks/came_fixed_code_decoder.h"
-GR_SWIG_BLOCK_MAGIC2(rks, came_fixed_code_decoder);
+%include "rks/binary_decoder_pulse_lenght.h"
+GR_SWIG_BLOCK_MAGIC2(rks, binary_decoder_pulse_lenght);

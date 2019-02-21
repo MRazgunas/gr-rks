@@ -23,7 +23,7 @@ from gnuradio import gr, gr_unittest
 from gnuradio import blocks
 import rks_swig as rks
 
-class qa_came_fixed_code_decoder (gr_unittest.TestCase):
+class qa_binary_decoder_pulse_lenght (gr_unittest.TestCase):
 
     def setUp (self):
         self.tb = gr.top_block ()
@@ -38,4 +38,4 @@ class qa_came_fixed_code_decoder (gr_unittest.TestCase):
 
 
 if __name__ == '__main__':
-    gr_unittest.run(qa_came_fixed_code_decoder, "qa_came_fixed_code_decoder.xml")
+    gr_unittest.run(qa_binary_decoder_pulse_lenght, "qa_binary_decoder_pulse_lenght.xml")
